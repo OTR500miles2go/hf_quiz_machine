@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HfQuizMachine</title>
+    <title>HF Quiz Machine</title>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,45 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <div class="container">
+        <div>
+        <%= link_to '<i class="material-icons right">grain</i>H.F. Quiz Machine'.html_safe, root_path , class: "waves-effect waves-light btn" %>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Open Source Project</h5>
+            <p class="grey-text text-lighten-4">Harold Finch Quiz Machine is open source.  Be a part of the H.F. Quiz Machine community or help improve your favorite quiz application.</p>
+            <a class="waves-effect waves-light btn" href="https://github.com/OTR500miles2go">Fork on Github</a>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text right-align">Keep In Touch</h5>
+            <ul class="contact-list right-align">
+              <li><a class="grey-text text-lighten-3 right-align" href="https://github.com/OTR500miles2go">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3 right-align" href="https://www.linkedin.com/in/dianegaydenin/">LinkedIn</a></li>
+              <li><a class="grey-text text-lighten-3 right-align" href="https://twitter.com/GaydenDiane">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container center-align">
+          <a class="grey-text text-lighten-4 center-align" href="https://www.dianegayden.com">© 2019 Diane Gayden.com</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+
