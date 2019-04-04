@@ -7,7 +7,7 @@
           <p><%= course.description %></p>
         </div>
         <div class="card-action">
-          <%= link_to '<i class="material-icons right">create</i>Take Quiz'.html_safe, course_index_path, class: "waves-effect waves-light btn" %>
+          <%= link_to '<i class="material-icons right">create</i>Take Quiz'.html_safe, question_path(course.id), class: "waves-effect waves-light btn" %>
         </div>
       </div>
     <% end %>

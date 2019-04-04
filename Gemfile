@@ -64,3 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Styling
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
+gem 'simple_form', '~> 4.1'
+
+# jQuery
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'

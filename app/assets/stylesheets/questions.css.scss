@@ -1,0 +1,13 @@
+.answer-list {
+  display: block;
+  transition: box-shadow .3s;
+  margin: auto;
+  width: 75%;
+  padding: .1rem;
+  text-align: left;
+  color: black;
+}
+
+.answer-list:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
