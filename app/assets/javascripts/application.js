@@ -23,16 +23,40 @@ $(document).on('turbolinks:load', function () {
   $("input:checkbox").on('click', function () {
     // in the handler, 'this' refers to the box clicked on
     let $box = $(this);
+    let boxName = $box.attr("name");
     if ($box.is(":checked")) {
       // the name of the box is retrieved using the .attr() method
       // as it is assumed and expected to be immutable
       let group = "input:checkbox[name='" + $box.attr("name") + "']";
+      // get the response value of the checked box
+      let response = $box.attr("value");
       // the checked state of the group/box on the other hand will change
       // and the current value is retrieved using .prop() method
       $(group).prop("checked", false);
       $box.prop("checked", true);
+      if (response === "k") {
+        $('p#checked-correct[name="' + boxName + '"]').css({ 
+          display: "block"
+        });
+        $('p#checked-false[name="' + boxName + '"]').css({
+          display: "none"
+        });
+      } else {
+        $('p#checked-correct[name="' + boxName + '"]').css({
+          display: "none"
+        });
+        $('p#checked-false[name="' + boxName + '"]').css({
+          display: "block"
+        });
+      }
     } else {
       $box.prop("checked", false);
+      $('p#checked-correct[name="' + boxName + '"]').css({
+        display: "none"
+      });
+      $('p#checked-false[name="' + boxName + '"]').css({
+        display: "none"
+      });      
     }
   });
 })

@@ -6,36 +6,36 @@
   </div>
   <div class="container">
     <% @quiz.each_with_index do |item, index| %>
-      <form action="#">
-      <div class="row">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title center-align">Question: <%= (index + 1) %></span>
-            <h5><%= item[:question] %></h5>
-          </div>
-
-          <div style="position:relative;width:100%;">
-            <div class="card-action white-text" id="altcontainer">
-              <p>
-                <% item[:answer_list].each do |key, value|  %>
-                  <label class="answer-list">
-                    <input type="checkbox" class="radio" value="1" name="fooby[<%= (index + 1) %>][]" >
-                    <span><%= value %></span>
-                  </label>
-                <% end %>
-              </p>
+      <% question_number = index + 1 %>
+      <form>
+        <div class="row">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title center-align">Question: <%= question_number %></span>
+              <h5><%= item[:question] %></h5>
+            </div>
+            <div style="position:relative;width:100%;">
+              <div class="card-action white-text" id="altcontainer">
+                <p>
+                  <% item[:answer_list].each do |key, value|  %>
+                    <label class="answer-list">
+                    <input type="checkbox" class="radio" value="<%= key %>" name="boxby[<%= question_number %>]" >
+                      <span><%= value %></span>
+                    </label>
+                  <% end %>
+                </p>
+              </div>
+            </div>
+            <div class="divider">
+              <%# Divider line %>
+            </div>
+            <div class="card-action">
+              <p class="checked-answer" id="checked-correct" name="boxby[<%= question_number %>]">That's correct!</p>
+              <p class="checked-answer" id="checked-false" name="boxby[<%= question_number %>]">Try again.</p>
             </div>
           </div>
-
-          <div class="divider"></div>
-          <div class="card-action">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right-align">send</i>
-            </button>             
-          </div>
         </div>
-      </div>
-    </form>
+      </form>
     <% end %>
   </div>
 </div>
