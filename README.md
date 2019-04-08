@@ -9,7 +9,7 @@ An open source project to help Web Developers by providing them with an app to t
 
 ## Contributing to hf_quiz_machine
 
-This is a project in need of many contributors.  The original project idea came from wanting an application such as this one as I was preparing "flashcards" for my skill assessments.  You are encoutaged to submit pull request, propose features and discuss issues.  
+This is a project in need of many contributors.  The original project idea came from wanting an application such as this one as I was preparing "flashcards" for my skill assessments.  You are encouraged to submit pull request, propose features and discuss issues.  
 
 ## License
 
