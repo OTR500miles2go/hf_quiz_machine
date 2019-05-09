@@ -2,34 +2,25 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12pt;
 }
-
 .main-content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-image: url(hf-servers.jpg);
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
   background-color: #141b28;
   color: #fff;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  text-align: center;
 }
-
 .contact-list {
   line-height: 1.5rem;
 }
-
+.mission {
+  background-image: url(hf-servers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #141b28;
+  color: #fff;
+  text-align: center;  
+}
 .mission-statement {
-  margin-top: 7rem;
-  font-size: 2rem;
-  line-height: 2rem;
   font-weight: 800;
   font-family: Sailec Bold;
 }
-
 .mission-button {
   padding: 2rem;
 }

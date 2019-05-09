@@ -4,7 +4,7 @@
       <h3 class="black-text">Questions: <%= @quiz.count %></h3>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="question-page">
     <% @quiz.each_with_index do |item, index| %>
       <% question_number = index + 1 %>
       <form>
@@ -30,8 +30,8 @@
               <%# Divider line %>
             </div>
             <div class="card-action">
-              <p class="checked-answer" id="checked-correct" name="boxby[<%= question_number %>]">That's correct!</p>
-              <p class="checked-answer" id="checked-false" name="boxby[<%= question_number %>]">Try again.</p>
+              <p class="checked-answer yellow-text text-darken-4" id="checked-correct" name="boxby[<%= question_number %>]">That's correct!</p>
+              <p class="checked-answer red-text text-darken-4" id="checked-false" name="boxby[<%= question_number %>]">Try again.</p>
             </div>
           </div>
         </div>
@@ -39,4 +39,3 @@
     <% end %>
   </div>
 </div>
-
