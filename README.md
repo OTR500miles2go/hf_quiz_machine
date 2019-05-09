@@ -1,6 +1,6 @@
 # Harold Finch Quiz Machine
 
-![](app-screenshot.png)
+![](https://github.com/OTR500miles2go/hf_quiz_machine/blob/master/app/assets/images/app-screenshot.png)
 
 The Harold Finch Quiz Machine wants to help Web Developers increase their skill level by providing them with an easy-to-use but meaningful way to test their knowledge.  There is no scorecard, ranking system or witty conversations.  Just you and the machine!   
 
