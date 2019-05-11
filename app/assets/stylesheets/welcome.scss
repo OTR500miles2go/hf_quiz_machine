@@ -13,9 +13,13 @@
   background-image: url(hf-servers.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position:center center;
   background-color: #141b28;
+  border: .05px solid rgb(104, 63, 63);
   color: #fff;
   text-align: center;  
+  padding: 4em;  
+  margin: 2em;
 }
 .mission-statement {
   font-weight: 800;
