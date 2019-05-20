@@ -8,7 +8,6 @@ class QuestionController < ApplicationController
     # Randomly select 10 numbers from that pool
     @display_questions = select_random(pool_number, 10)
     
-
     if @display_questions.kind_of?(Array) 
       # Pull the selected questions, by id, from the database
       @question_list = Question.where("course_id" => params[:id]).where('id IN (?)', @display_questions)
@@ -29,7 +28,7 @@ class QuestionController < ApplicationController
     if total_items_returned > total_in_pool
       return -1
     end  
-    # Build the array, remove any duplicates
+    # Build the array for selected id numbers, remove any duplicates
     while selected_items.length < total_items_returned
       selected_items.push(rand(1..total_in_pool))
       selected_items = selected_items.uniq

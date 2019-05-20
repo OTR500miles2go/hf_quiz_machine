@@ -10,3 +10,15 @@ main {
   flex: 1 0 auto;
 }
  
+.card {
+  position: relative;
+  margin: 1rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 10px;
+  border: 1px solid #72500b;
+}
+
+.card .card-action:last-child {
+  border-radius: 0 0 10px 10px;
+}

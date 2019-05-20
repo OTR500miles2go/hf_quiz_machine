@@ -14,8 +14,16 @@
 
 #altcontainer {
   background: #eceff1;
+  border-radius: 0px;
 }
 
+.card-action:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.card-title {
+  border-radius: 10px;
+}
 .checked-answer {
   display: none;
   font-weight: bold;
