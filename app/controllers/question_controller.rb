@@ -1,6 +1,4 @@
 class QuestionController < ApplicationController
-  def index
-  end
 
   def show
     # How many questions for this course
