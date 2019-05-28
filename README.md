@@ -1,6 +1,7 @@
 # Harold Finch Quiz Machine
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=An%20open%20source%20Rails%20quiz%20application&url=https://github.com/OTR500miles2go/hf_quiz_machine)
 
-![](https://github.com/OTR500miles2go/hf_quiz_machine/blob/master/app/assets/images/app-screenshot.png){target="_blank"}
+![](https://github.com/OTR500miles2go/hf_quiz_machine/blob/master/app/assets/images/app-screenshot.png)
 
 The Harold Finch Quiz Machine wants to help Web Developers increase their skill level by providing them with an easy-to-use but meaningful way to test their knowledge.  There is no scorecard, ranking system or witty conversations.  Just you and the machine!   
 
